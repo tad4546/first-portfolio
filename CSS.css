@@ -1,0 +1,20 @@
+﻿body
+{
+	background-color: darkslategray;
+}
+
+	.btn-color{
+		background-color: aqua;
+		color: black;
+		
+	}
+
+	
+	/*
+	this is for styling all h2 tags, can be done to many other tags....
+	h2{
+		font-size: 16px;
+		color: red
+	}*/
+	
+
