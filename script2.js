@@ -70,7 +70,7 @@ function fun3(){
         document.getElementById("text3").style.color = "green"
         document.getElementById('btn5').style.visibility = "visible"
    }else{
-        text3.innerHTML = "The winning numbers are: "+ num1 + '; ' + num2 + '; ' + num3 + '. '+"  Taugh luck you lost"
+        text3.innerHTML = "The winning numbers are: "+ num1 + '; ' + num2 + '; ' + num3 + '. '+"  Tough luck you lost"
         document.getElementById("text3").style.color = "red"
         document.getElementById('btn5').style.visibility = "visible"
    }
