@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/11aeda929c.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="navbar">
+        <input type="checkbox" id="check2">
+       <div class="brand">T.R Zvitambo</div>
+       <label for="check2" id="label">
+        <i id="dark" class="fa-regular fa-moon" onclick="dark()"></i>
+        <i id="light" class="fa-regular fa-sun" onclick="light()"></i>
+       </label>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <ul>
+                <li><a href="#first">About</a></li> 
+                <li><a href="#second">Projects</a></li>
+                <li><a href="#third">Contact</a></li>
+            </ul>
+        </nav>
+        <!--<div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul id="menu" class="mobile-menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>-->
+
+    </header>
+    <main>
+
+        <fieldset class="first" id="first">
+            <div id="" class="container">
+                <h1>
+                    Hi I am Tadiwanashe<br><i>an aspiring developer</i>
+                </h1>
+            </div>
+        </fieldset>
+
+        <fieldset class="second">
+            <div class="container2" id="second">
+                <header id="hd">
+                    Projects i have done
+                </header>
+                <div id="wrapper">
+                    <a href="Number guessing game/index.html" target="_blank"><div><img src="num2.jpg"><span>Number guessing game</span></div></a>
+                    <a href="Survey form/Index.html" target="_blank"><div><img src="suv2.jpg"><span>Survey form</span></div></a>
+                    <a href="Technical documentation page/index.html" target="_blank"><div><img src="tech2.jpg"><span>Technical documentation</span></div></a>
+                    <a href="Tribute page/index.html" target="_blank"><div><img src="trib2.jpg"><span>Tribute page</span></div></a>
+                    <!--<div></div>
+                    <div></div>-->
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="third" id="third">
+            <header id="hd2">
+                How about we work together?<br><span>Contact me on:</span>
+            </header>
+            <div class="icons">
+                <div class = "icon phone">
+                    <span onclick = "window.open('tel:+27627982466');" type = "button"><i class="fa fa-phone"></i></span>
+                        
+                </div>
+                <div class = " icon github">
+                    <span onclick = "window.open('https://github.com/tad4546','_blank')" type = "button" ><i class="fa-brands fa-github"></i></span>
+                </div>
+    
+                <div class = "icon facebook">
+                    <span onclick = "window.open('https://www.facebook.com/tadiwa.zvitambo.7?mibextid=ZbWKwL','_blank')" type = "button"><i class="fa-brands fa-square-facebook"></i></span>
+                </div>
+    
+                <div class = "icon linkedin">
+                    <span onclick = "window.open('https://www.linkedin.com/in/tadiwa-zvitambo-826184225','_blank')" type = "button"><i class="fa-brands fa-linkedin-in"></i></span>
+                </div>
+    
+                <div class="icon Email">
+                    <span onclick = "window.open('mailto:tadiwa.zvitambo@gmail.com')" type = "button"><i class="fa-regular fa-envelope"></i></span>
+                </div>
+            </div>>
+        </fieldset>
+
+        <fieldset class="fourth">
+            <p>**This website was build from the ground up by Tadiwanashe Rabson Zvitambo</p>
+        </fieldset>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

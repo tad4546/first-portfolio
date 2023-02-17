@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey</p>
+    <form id="survey-form" method="post" action="mailto:tadiwa.zvitambo@gmail.com">
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="First Name" required/> </label><br>
+            <label for="last-name">Enter Your last Name: <input id="last-name" name="last-name" type="text" placeholder="Last Name" required/> </label><br>
+            <label for="email">Enter Your Email: <input id="email" name="Email" type="email" placeholder="Email" required/> </label><br>
+            <label for="age">Enter Your Age: <input id="age" name="age" type="number"required min="18" max="150"/> </label>
+        </fieldset>
+        <fieldset>
+            <label for="occupation">What is your current occupation? 
+                <select name="occupation" id="dropdown">
+                    <option value="">(Select one)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Employed</option>
+                    <option value="3">Unemployed</option>
+                    <option value="4">Self-Employed</option>
+                </select>    
+            </label><br>
+            <p1>Do you have a valid driver's license?</p1><br>
+            <label for="Yes">
+                <input class="yes-no" id="Yes" name="drivers-license" type="radio" value="Yes"/>Yes
+            </label><br>
+            <label for="No">
+                <input class="yes-no" id="No" name="drivers-license" type="radio"/>No
+            </label><br>
+                <label for="issuedate">If yes, when did you get it? <input id="issuedate" name="issuedate" type="date"/> </label><br>
+
+        </fieldset>
+        <fieldset>
+            <p1>Would you recommend this survey to a friend?</p1><br>
+            <label for="Yes1">
+                <input class="yes-no" id="Yes1" name="recommend" type="radio" value="Yes"/>Yes
+            </label><br>
+            <label for="No2">
+                <input class="yes-no" id="No2" name="recommend" type="radio"/>No
+            </label><br>
+            <label for="comments">Any additional comments?
+                <textarea id="commwents" name="comments" rows="3" cols="30"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="terms">
+                <input class="yes-no" id="terms" name="terms-and-conditions" type="checkbox" value="agreed" required/>I accept the <a href="#Terms">terms and conditions</a>
+            </label><br>
+            <label for="news">
+                <input class="yes-no" id="news" name="news-letters" type="checkbox" value="agree"/>I want to recieve news letters.
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
