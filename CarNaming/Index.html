@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11aeda929c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amethysta">
+
+</head>
+<body>
+    <div id="surprise">
+        <h1>AN EMPTINESS OF NNOTHINGNESS</h1>
+    </div>
+    <div id="menu">
+        <button id="play" title="Have you read the instructions buddy?">Play</button>
+        <button id="instructions" title="Yes, these, read them please.">Instructions</button>
+        <button id="surpriseMe" title="There's nothing there, yet.">Surprise Me</button>
+    </div>
+    <div id="instruct">
+        <i class="fa-solid fa-arrow-left" id="back"></i>
+        <h1>How To Play</h1><br>
+        <ul>
+            <li>This is a two player car naming game.</li><br>
+            <li>On "A", you name a car manufacturer that starts with that letter and so on.</li><br>
+            <li>If a car manufacturer has a name "AAA BBBB" putting only the first name will be considered correct.</li><br>
+            <li>Spelling at least the first three to four letters correct will be considered correct.</li><br>
+            <li>If you think a certain car manufacturer is not included, you are probably on Wikipedia, and that's cheating.</li><br>
+            <li>Click "Enter" to register your answer.</li><br>
+            <li>Once you press "Enter" there is no going back.</li><br>
+            <li>Do not press next when you have reached "Z", your device might crash😊.</li>
+     </ul>
+    </div>
+    <div id="game">
+        <div id="nav">
+            <h2 id="playNav">Play again</h2>
+        </div>    
+        <div class="icons">
+            <div id="previous" class="direction"><i class="fa-solid fa-chevron-left"></i></div>
+            <h1 id="letters"></h1>
+            <div id="next" class="direction"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+    
+        <div class="player1And2">
+            <div class="player_1">
+                <h2 class="tags">PLAYER 1:</h2>
+                <h2 id="score1">0</h2> 
+            </div>
+            <div class="player_2" >
+                <h2 class="tags">PLAYER 2:</h2>
+                <h2 id="score2">0</h2>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="A">
+                <div class="player1" id="p1">
+                    <input id="input1"><br>
+                    <button type="buttons" id="btn1" >ENTER</button>
+                    <!--<h2 id="text">text here1</h2>-->
+                </div>
+                <div class="player2" id="p2">
+                    <input id="input2"><br>
+                    <button type="buttons" id="btn2" >ENTER</button>
+                    <!--<h2 id="text2">text here2</h2>-->
+                </div>
+            </div>    
+        </div>
+        <div class="confetti-container" id="confetti">
+          <!-- <div class="confetti"></div>-->
+        </div>
+        <h2 id="congrats" class="flash-text"></h2>      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

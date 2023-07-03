@@ -1,0 +1,545 @@
+body{
+   background-color: #5a189a;
+   font-family: Amethysta;
+   
+}
+.fa-solid{
+    font-size: larger;
+}
+button{
+    color:rgb(245, 245, 245);
+    background-color: black;
+    height:20%;
+    width:60px
+}
+.wrapper{
+    display: flex;
+    background-color: transparent;
+    width:50em;
+    height:15em;
+    margin-left: 19%;
+    margin-right: auto;
+    margin-top: 0.2%;
+    border-radius: 10%;
+    position: absolute;
+}
+.A{
+    display: flex;
+    justify-content: space-between;
+}
+.player2{
+    width:25em;
+    border-radius: 0 5% 5% 0;
+    border: 3px solid #9d4edd;
+}
+.player1{
+    width:25em;
+    border-radius: 5% 0 0 5% ;
+    border: 3px solid #9d4edd;
+}
+.player1, .player2{
+    background-color: #ff8500;
+}
+button{
+    margin-top: 10%;
+    margin-left: 32%;
+    width:150px;
+    border-radius: 5%;
+    background-color: rgb(182, 182, 182);
+    font-weight: bolder;
+    transition: color 0.8s;
+    border:3px solid transparent;
+    color: #5a189a;
+    transition: border 2s;
+}
+button:hover{
+    transition: color 0.8s;
+    border:3px solid #5a189a;
+    transition: border 2s;
+    cursor:pointer
+}
+input{
+   margin-top: 20%;
+   margin-left: 25%;
+   width:200px;
+   height:50px;
+   border:3px solid white;
+   border-radius: 5%;
+   font-size: x-large;
+   font-weight: bolder;
+   color:#ff9e00;
+   background-color: #5a189a;
+}
+.tags{
+    margin-left: 3%;
+}
+.player_1{
+    display: flex;
+    width: 170px;
+    height: 50px;
+    justify-content: space-between;
+}
+.player_2{
+    display: flex;
+    height:50px;
+    width: 170px;
+    justify-content: space-between;   
+}
+.player1And2{
+    display: flex;
+    background-color: transparent;
+    margin-left:auto ;
+    margin-right: auto;
+    width:45em;
+    justify-content: space-between;
+    color: rgb(255, 255, 255) 
+}
+#letters{
+    margin-top: -30px;
+    font-size: 100px;
+    font-weight: bolder;
+    color:#ff8500;
+    position: absolute;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;
+    margin-bottom: 9%;
+}
+.direction{
+    font-size: 45px;
+    color:rgb(81, 82, 82);
+    height: 60px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 10%;
+    transform: translateX(0px);
+    overflow: hidden;
+    transition-duration: 0.4s;
+    margin-left: 200px;
+}
+.direction:hover{
+    cursor: pointer;
+    color:#ff9e00;
+    transition: transform 0.5s ;
+    background-color: rgb(182, 182, 182) ; 
+}
+#previous:hover{
+    transform: translateX(-10px);
+    box-shadow: black 5px 5px 5px;
+}
+#next{
+    transition: 1s;
+}
+#next:hover{
+    transform: translateX(10px);
+    box-shadow: rgb(0, 0, 0) -5px 5px 5px ;
+    transition: color 0.8s;
+    transition: 0.8s;
+}
+.direction:after {
+    display: block;
+    content: "";
+    height: 60px;
+    padding-top: 2px;
+    padding-left: 50%;
+    padding-right: 100%;
+    background-color: #5a189a;
+    border-radius: 10%;
+    opacity: 0;
+    transition: all 1s;
+    margin-top:-60px;
+    margin-left:-10px;
+    position: absolute; 
+}
+.direction:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#game button{
+    box-shadow: 0 5px rgba(0,0,0,0.5);
+}
+#game button:active{
+    box-shadow: 0 5px #ff8500;
+    transform: translateY(2px);
+}
+#menu{
+    display:grid;
+    position: absolute;
+    width:70%;
+    height:50%;
+    margin-left: 15%;
+    margin-top: 10%;  
+}
+#menu button{
+    margin-top: 10px;
+    height: 70%;;
+    width: 300px;
+    font-size: 30px;
+    transition: color 0.7s;
+    border:3px solid #ff9e00;
+    transition: 0.8s;
+}
+#menu button:hover{
+    transition: color 0.7;
+    transform: translateX(10px);
+    box-shadow: black 5px 5px 5px;
+    transition: 0.8s;
+    color:#ff9e00
+}
+#instruct{
+    position: absolute;
+    width:70%;
+    height:100%;
+    margin-left: 15%;
+    top: 0;
+    opacity:0.8;
+}
+#instruct h1{
+    margin-left: 40%;
+    font-size: 40px;
+    color:white;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+ul li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff9e00; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+}
+#nav{
+    top: 0;
+    left:0;
+    margin-bottom: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    z-index: 1;
+}
+#nav h2{
+    transition: 0.5s ease;
+    color:rgb(255, 255, 255);
+}
+#nav h2:hover{
+    color:#ff9e00;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#surprise{
+    position: absolute;
+    width:70%;
+    height:50%;
+    margin-left: 15%;
+    top: 10;  
+}
+#back{
+    font-size: 28px;
+    margin-top: 10px;
+    color:white;
+    transition: 0.5s;
+    position: absolute;
+    left: -8%
+}
+#back:hover{
+    cursor:pointer;
+    color:#ff9e00;
+    font-size:35px;
+    transition: 0.5s 
+}
+/*Confetti*/
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00; 
+    border-radius: 50%;
+    animation: confetti-fall 4s linear infinite;
+}
+  
+@keyframes confetti-fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+    }
+}
+  
+/*congratulations text*/
+.flash-text {
+    animation: flashing 2s infinite;
+    position: absolute;
+    left: 39%;
+    top:30%;
+    color:yellow;
+    font-size:3rem;
+}
+  
+@keyframes flashing {
+    10%, 50% {
+        visibility: hidden;
+        color: red;
+      }
+      25%, 75% {
+        visibility: visible;
+        color: blue;
+      }
+}
+  
+
+@media (min-width:0px) and ( max-width: 680px) {
+body{
+    display:flex;
+    background-color: #9d4edd;
+    justify-content: center;
+}
+.fa-solid{
+    font-size: smaller;
+}
+#next{
+    margin-left: 150px;
+}
+.wrapper{
+    width:10em;
+    height:10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.A{
+    display: flex;
+    justify-content: space-between;
+}
+.player1, .player2{
+    width: 10em;
+    place-items: center;
+}
+button{
+    margin-top: 10%;
+   margin-left: 27%;
+    height:15%;
+    width:6em;
+}
+
+input{
+    margin-top: 20%;
+    margin-left: 15%;
+    width:8em;
+    height:30px;
+    font-size: smaller;
+    
+ }
+ .tags{
+     margin-left: 3%;
+ }
+ .player_1{
+     width: 170px;
+     height: 50px;
+     margin-left: 10px;
+ }
+ .player_2{
+     display: flex;
+     height:50px;
+     margin-left: 90px;
+ }
+ .player1And2{
+    margin-bottom: -20px;
+     width:32em;
+     font-size: x-small;
+     margin-top: 100px;
+ }
+ #letters{
+     margin-top: -8px;
+     font-size: 60px;  
+ }
+ .icons{
+     width: 80%;
+     margin-top: 100%;
+ }
+#nav h2{
+    font-size: 20px;
+    margin-left:-40px
+}
+#instruct{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     width:100%;
+    height:100%;  
+ }
+ #instruct h1{
+     margin-left: 20%;
+     font-size: 40px;
+     
+ }
+#back{
+    font-size: 28px;
+    left: 1%
+}
+#menu{
+    display:grid;
+    position: absolute;
+    width:100%;
+    height:50%;
+    left: -15%;
+    margin-top: 70%;
+}
+#menu button{
+    margin-top: 10px;
+    height: 70%;;
+    width: 300px;
+    transition: 0.8s;
+    margin-left: 14%;
+}
+.flash-text {
+    animation: flashing 2s infinite;
+    position: absolute;
+    left: 13%;
+    top:20%;
+    color:rgb(248, 248, 13);
+    font-size:3rem;
+  }
+}
+
+@media (min-width:681px) and (max-width: 1080px) {
+    body{
+        display:flex;
+        background-color: #9d4edd;
+        justify-content: center;
+    }
+    .fa-solid{
+        font-size: smaller;
+        margin-left: 2px;
+    }
+    #next{
+        margin-left: 150px;
+    }
+    
+    .wrapper{
+        width:20em;
+        height:10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .A{
+        display: flex;
+        justify-content: space-between;
+    }
+    .player1, .player2{
+        width: 20em;
+        place-items: center;
+    }
+    button{
+        margin-top: 10%;
+       margin-left: 37%;
+        height:20%;
+        width:6em;
+    }
+    
+    input{
+        margin-top: 5%;
+        margin-left: 27%;
+        width:10em;
+        height:30px;
+        font-size: small;
+        
+     }
+     .player_1{
+         width: 170px;
+         height: 50px;
+         margin-left: 10px;
+     }
+     .player_2{
+         display: flex;
+         height:50px;
+         
+     }
+     .player1And2{
+        margin-bottom: -10px;
+         width:47.5em;
+         font-size: smaller;
+         margin-top: 100px;
+     }
+     #letters{
+         margin-top: -10px;
+         font-size: 70px;  
+     }
+     
+     .icons{
+         width: 100%;
+         position: relative;
+         margin-top: 30%;
+     }
+     
+     #nav{
+        margin-left: -100px
+     }
+    #nav h2{
+        font-size: 20px;
+    }
+    #instruct{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width:100%;
+       height:100%;  
+    }
+    #instruct h1{
+        margin-left: 20%;
+        font-size: 40px;
+        margin-left: 30%;
+        
+    }
+    
+   #back{
+       font-size: 28px;
+       left: 1%
+   }
+   #menu{
+    display:grid;
+    position: absolute;
+    width:100%;
+    height:80%;
+    left: -15%;
+    margin-top: 13px;
+}
+#menu button{
+    margin-top: 10px;
+    height: 90%;;
+    width: 300px;
+    transition: 0.8s;
+    margin-left: 35%;
+}
+.flash-text {
+    animation: flashing 2s infinite;
+    position: absolute;
+    left: 13%;
+    top:20%;
+    color:rgb(248, 248, 13);
+    font-size:3rem;
+  }
+}
