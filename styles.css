@@ -168,15 +168,18 @@ nav a:hover{
     box-shadow: 5px 10px 10px;
 }
 #wrapper a:nth-child(1){
-    box-shadow:8px 10px 10px rgb(121, 221, 204);
+    box-shadow:8px 10px 10px #9d4edd;
 }
 #wrapper a:nth-child(2){
-    box-shadow:8px 10px 10px rgb(139, 93, 224);
+    box-shadow:8px 10px 10px rgb(121, 221, 204);
 }
 #wrapper a:nth-child(3){
-    box-shadow:8px 10px 10px rgb(226, 46, 14);
+    box-shadow:8px 10px 10px rgb(139, 93, 224);
 }
 #wrapper a:nth-child(4){
+    box-shadow:8px 10px 10px rgb(226, 46, 14);
+}
+#wrapper a:nth-child(5){
     box-shadow:8px 10px 10px rgb(126, 126, 126);
 }
 
@@ -195,12 +198,15 @@ a span{
     padding-left:15%;
 }
 #wrapper a:nth-child(2) span{
-   padding-left:30%;
+    padding-left:15%;
 }
 #wrapper a:nth-child(3) span{
-   padding-left:15%;
+   padding-left:30%;
 }
 #wrapper a:nth-child(4) span{
+   padding-left:15%;
+}
+#wrapper a:nth-child(5) span{
    padding-left:30%;
 }
 
