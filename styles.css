@@ -78,24 +78,6 @@ nav a:hover{
     background-color: #e1306c;
 }
 
-/*.container{
-    margin-top:70px;
-    height:31em;
-    border-bottom: 2px solid rgb(211,43,52);
-    position: relative;
-}*/
-
-/*.first .container h1{
-    position: absolute;
-    top:35%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:rgb(255,255,255);
-    font-weight: bolder;
-    font-size: 48px;
-    text-shadow: 0px 2px rgb(2, 2, 2);
-}*/
-
 .first h1{
     color:rgb(255,255,255);
     font-weight: bolder;
@@ -160,9 +142,7 @@ nav a:hover{
     width: 100%;
     max-width: 400px;
     height: 350px;
-    /*object-fit: cover;*/
     border-radius: 10px;
-   /* border:3px solid rgb(211, 43, 52);*/
     text-decoration: none;
     transition: 1s; 
     box-shadow: 5px 10px 10px;
@@ -277,8 +257,8 @@ a span{
     cursor: pointer;
 }
 
-.icons .facebook i:hover{
-    background-color:rgb(59, 89,152);
+.icons .twitter i:hover{
+    background-color:rgb(0, 0, 0);
     color:rgb(255,255,255);
     transform: translateY(6px);
     transition: 0.4s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
